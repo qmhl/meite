@@ -19,5 +19,32 @@
 			<version>1.7.0.RELEASE</version>
 		</dependency>
 
+		<!-- 阿波罗整合 SpringBoot -->
+		<dependency>
+			<groupId>com.ctrip.framework.apollo</groupId>
+			<artifactId>apollo-client</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ctrip.framework.apollo</groupId>
+			<artifactId>apollo-core</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.mayikt</groupId>
+			<artifactId>meite-shop-common-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mayikt</groupId>
+			<artifactId>meite-shop-service-api-auth</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- springcloud feign组件 -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
 	</dependencies>
 </project>

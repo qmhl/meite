@@ -1,18 +1,41 @@
+
+###服务启动端口号
 server:
   port: 8300
+###服务名称(服务注册到eureka名称)  
 spring:
-  application:
-    name: app-mayikt-member
+#    application:
+#        name: app-mayikt-member
+###服务注册到eureka地址
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8100/eureka
-swagger:
-  base-package: com.mayikt.member.service
-  title: SpringCloud2.x构建微服务电商项目-会员服务接口
-  description: 该项目“基于SpringCloud2.x构建微服务电商项目”由每特教育|蚂蚁课堂版权所有，未经过允许的情况下，私自分享视频和源码属于违法行为。
-  version: 1.1
-  terms-of-service-url: www.mayikt.com
-  contact:
-    name: 97后互联网架构师-余胜军
-    email: 644064779@qq.com
+           defaultZone: http://localhost:8100/eureka
+
+
+  
+spring:
+  application:
+    name:  app-mayikt-member
+  redis:
+    host: 188.131.155.46
+    port: 6379
+    password: 123456
+    pool:
+      max-idle: 100
+      min-idle: 1
+      max-active: 1000
+      max-wait: -1
+###数据库相关连接      
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/meite_member?useUnicode=true&characterEncoding=UTF-8
+
+####打印MyBatias日志    
+logging:
+  level:
+  ### 开发环境使用DEBUG 生产环境info或者error
+   com.mayikt.member.mapper: DEBUG
+  

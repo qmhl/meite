@@ -3,8 +3,23 @@ server:
   port: 80
 ###服务名称(服务注册到eureka名称)  
 spring:
-    application:
-        name: app-mayikt-zuul
+  application:
+    name:  app-mayikt-zuul
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#    password: 123456
+    pool:
+      max-idle: 100
+      min-idle: 1
+      max-active: 1000
+      max-wait: -1
+###数据库相关连接      
+  datasource:
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/meite_gateway?useUnicode=true&characterEncoding=UTF-8
 ###服务注册到eureka地址
 eureka:
   client:
@@ -23,3 +38,16 @@ zuul:
         ### 以 /api-member/访问转发到订单服务
       path: /api-member/**
       serviceId: app-mayikt-member
+    api-c:
+        ### 以 /api-pay/访问转发到订单服务
+      path: /api-pay/**
+      serviceId: app-mayikt-pay     
+    api-d:
+        ### 以 /api-pay/访问转发到订单服务
+      path: /api-spike/**
+      serviceId: app-mayikt-spike     
+mayikt: 
+  zuul: 
+    swagger: 
+      document: 每特教育独创微服务项目      
+      

@@ -11,13 +11,21 @@
 	<modules>
 		<module>meite-shop-service-api-weixin</module>
 		<module>meite-shop-service-api-member</module>
+		<module>meite-shop-service-api-search</module>
+		<module>meite-shop-service-api-goods</module>
+		<module>meite-shop-service-api-pay</module>
+		<module>meite-shop-service-api-integral</module>
+		<module>meite-shop-service-api-authorizatio</module>
+		<module>meite-shop-basics-api-auth</module>
+		<module>meite-shop-service-api-auth</module>
+		<module>meite-shop-service-api-spike</module>
 	</modules>
 	<dependencies>
-		<!-- swagger-spring-boot -->
+
 		<dependency>
-			<groupId>com.spring4all</groupId>
-			<artifactId>swagger-spring-boot-starter</artifactId>
-			<version>1.7.0.RELEASE</version>
+			<groupId>com.mayikt</groupId>
+			<artifactId>meite-shop-common-core</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>

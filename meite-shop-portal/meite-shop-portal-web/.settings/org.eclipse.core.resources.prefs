@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/templates/base/bottom.ftl=UTF-8
+encoding//src/main/resources/templates/base/head.ftl=UTF-8
+encoding//src/main/resources/templates/index.ftl=UTF-8
+encoding//src/main/resources/templates/member/login.ftl=UTF-8
+encoding//src/main/resources/templates/member/qqlogin.ftl=UTF-8
+encoding//src/main/resources/templates/member/register.ftl=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding/<project>=UTF-8
+encoding/resources=UTF-8
